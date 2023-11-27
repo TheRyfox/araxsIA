@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://media.discordapp.net/attachments/1148673347392127046/1178448186763923547/imagen_2023-11-26_222317809_waifu2x_photo_noise3_scale.png?ex=65762e66&is=6563b966&hm=eb15638ae46f267d6fc14823f54990815d73bccb1632d8537def78d8d3b9843a&=&format=webp&width=671&height=671">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+
+
+    <div id="Ajustes" style="display: none;">
+      <div class="panel-ajustes">
+
+        <h3 class="h3-ajuste-Titulo-1">Funciones Predeterminadas.</h3>
+
+        <h3 class="h3-ajuste1"> <a>⁕</a> Guardado Automático</h3>   <label class="switch" style="pointer-events: none;" ><input type="checkbox" checked><span class="slider"></span></label>
+        <h4 class="h4-ajuste1">Guardar todos los mensajes del chat Automáticamente</h4>
+
+        <h3 class="h3-ajuste2"> <a>⁕</a> Modo Desarrollador</h3>   <label class="switch switch-2" style="pointer-events: none;"><input type="checkbox" checked><span class="slider"></span>
+        </label>
+        <h4 class="h4-ajuste2">Cambia el color del chat a modo Claro o modo Oscuro como mas te guste</h4>
+
+        <h3 class="h3-ajuste3"> <a>⁕</a> Modo Developer</h3>   <label class="switch switch-3"><input type="checkbox" checked><span class="slider"></span>
+        </label>
+        <h4 class="h4-ajuste3">Borra tus conversaciones con Araxs y vuelve a comenzar otra nueva conversación </h4>
+
+        <h3 class="h3-ajuste-Titulo-2">Ajustes de la Cuenta (Próximamente)</h3>
+
+        <h3 class="h3-ajuste4" onclick="deactivateDiv()">Salir de Ajustes</h3>
+
+        <div class="panel-avatars">
+          <img src="/Avatar 0.1.png">
+          <img src="/Avatar 0.2.png">
+          <img src="/Avatar 0.1.png">
+          <img src="/Avatar 0.1.png">
+          <img src="/Avatar 0.1.png">
+          <img src="/Avatar 0.1.png">
+          <img src="/Avatar 0.1.png">
+          <img src="/Avatar 0.1.png">
+          <img src="/Avatar 0.1.png">
+          <img src="/Avatar 0.1.png">
+        </div>
+
+
+
+
+
+    </div>
+      </div>
+
+
+
+
+    <!-- Chats container -->
+    <div class="chat-container" id="ChatIA" class="inactive-div"></div>
+    
+    <!-- Typing container -->
+    <div class="typing-container">
+      <div class="typing-content">
+        <div class="typing-textarea">
+          <textarea id="chat-input" spellcheck="false" placeholder="" required></textarea>
+          <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+
+        <div class="typing-controls">
+          <span id="theme-btn" class="material-symbols-rounded"></span>
+          <span id="delete-btn" class="material-symbols-rounded">delete</span>
+          <span onclick="activateDiv()" class="material-symbols-rounded"><img src=""></span>
+      </div>
+
+    </div>
+
+<script>
+  function activateDiv() {
+    const divElement = document.getElementById("Ajustes");
+    divElement.style.display = "block";
+  }
+</script>
+
+<script>
+  function deactivateDiv() {
+    const divElement = document.getElementById("Ajustes");
+    divElement.classList.add("desactivacion");
+    setTimeout(function() {
+      divElement.style.display = "none";
+    }, 1000);
+  }
+</script>
+
+
+  </body>
+</html>
